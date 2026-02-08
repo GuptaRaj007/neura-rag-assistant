@@ -1,25 +1,21 @@
-# Core RAG framework
+# Core
+python-dotenv>=1.0.1
+
+# LangChain (document loading & splitting)
 langchain>=0.2.0
 langchain-community>=0.2.0
 
-# Vector databases
-chromadb>=0.5.0
-faiss-cpu>=1.8.0
-
-# Embeddings & LLM utilities
+# Embeddings & retrieval
 sentence-transformers>=2.7.0
 transformers>=4.40.0
 torch>=2.1.0
 
-# Tokenization & text utils
-tiktoken>=0.6.0
+# Vector store
+faiss-cpu>=1.8.0
 
-# Document loaders
+# PDF / text loaders
 pypdf>=4.0.0
 
-# Environment variables
-python-dotenv>=1.0.1
-
-# Optional (but recommended for eval stability)
-scikit-learn>=1.4.0
+# Evaluation & utilities
 numpy>=1.26.0
+scikit-learn>=1.4.0
