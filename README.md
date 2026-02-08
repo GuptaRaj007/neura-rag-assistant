@@ -74,6 +74,17 @@ Start Ollama:
 ollama run llama3
 ```
 
+### One-Time Indexing (Required First Run)
+
+Before asking questions, you must build the vector store from the policy documents.
+
+Run these once:
+
+```bash
+python src/load_docs.py
+python src/embed_store.py
+
+
 Run the assistant:
 
 ```bash
@@ -262,3 +273,4 @@ Add reranking and automatic response scoring.
 │   ├── qa.py
 │   └── evaluate.py
 ```
+
